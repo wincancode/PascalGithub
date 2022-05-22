@@ -28,7 +28,7 @@ Begin
   MenorMalvado := Numero+1;
   MenorPerfecto := Numero+1;
 
-  While Numero<>0 Do
+While Numero<>0 Do
     Begin
       //*Se verifican los numeros perfectos
       AuxilairPerfecto := 0;

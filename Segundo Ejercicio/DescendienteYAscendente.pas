@@ -2,11 +2,15 @@
 Program DescendienteYAscendente;
 
 Uses Crt;
- 
 
 Begin
 
-End.
+  While 
+
+        End.
+
+
+        1
 
 
 
