@@ -119,12 +119,17 @@ End.
 
 
 
+
+
+
+
+
 {!1.- Dado una secuencia de números naturales, finalizada con un cero, construya un
 algoritmo que determine : el mayor, el menor y el promedio de los números perfectos y
 a su vez malvados, según la definición dada a continuación.
 
 Número perfecto: es todo número natural que es igual a la suma de sus divisores propios
-(es decir, todos sus divisores excepto el propio número). Por ejemplo, 6 es un número
+(es decir, todos sus divisorees excepto el propio número). Por ejemplo, 6 es un número
 perfecto ya que sus divisores propios son 1, 2, y 3 y se cumple que 1+2+3=6.
 
 Número malvado: todo número natural cuya expresión en base 2 (binaria) contiene un
