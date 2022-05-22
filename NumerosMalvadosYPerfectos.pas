@@ -9,7 +9,7 @@ Var
 
   PromedioPerfectos,PromedioMalvados:  Real;
 Begin
-  //Este comentario YA NO esta sincronizado... o si?
+  //Juandi si lees esto sos un pro y yo tmbn
   j := 0;
   perfectos := 0;
   malvados := 0;
@@ -28,9 +28,11 @@ Begin
 
 
 
+
 'Este programa calcula el promedio, el mayor, y el menor de los numeros perfectos y malvados de una secuencia numerica. '
   );
   Writeln(
+
 
 
 
@@ -53,6 +55,7 @@ Begin
               AuxilairPerfecto := AuxilairPerfecto+i;
             End;
         End;
+
 
 
 
@@ -86,6 +89,7 @@ Begin
             Writeln('C',j)
           End;
       Until (AuxiliarBinario=0);
+
 
 
 
@@ -138,6 +142,7 @@ Begin
   Readkey();
 
 End.
+
 
 
 
