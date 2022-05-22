@@ -21,7 +21,8 @@ Begin
   MayorMalvado  := 0;
   MayorPerfecto := 0;
 
-  Writeln('Este programa calcula el promedio, el mayor, y el menor de los numeros perfectos y malvados de una secuencia numerica. ');
+  Writeln('Este programa calcula
+   el promedio, el mayor, y el menor de los numeros perfectos y malvados de una secuencia numerica. ');
   Writeln('Ingrese una secuencia de numeros, utilizando el cero (0) para terminarla.');
   Readln(Numero);
 
