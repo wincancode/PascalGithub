@@ -64,7 +64,6 @@ Begin
       //*Se verifican los numeros malvados
       AuxBin := Numero;
       j := 0;
-      //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
       Repeat
         AuxBin2 := AuxBin Mod 2;
@@ -89,10 +88,8 @@ Begin
 
         End;
 
-      //*
       Writeln('Ingrese otro numero.');
       Readln(Numero);
-
     End;
 
   If Perfectos<>0 Then
@@ -102,13 +99,10 @@ Begin
       Writeln('El mayor es: ', MayorPerfecto);
       Writeln('El menor es: ', MenorPerfecto);
       Writeln('Y su promedio fue de: ',PromedioPerfectos:0:2);
-      Writeln('------------------------------------------------');
     End
   Else
-    Begin
-      Writeln('No hubieron Numeros Perfectos');
-      Writeln('------------------------------------------------');
-    End;
+    Writeln('No hubieron Numeros Perfectos');
+  Writeln('---------------------------------');
   If Malvados<>0 Then
     Begin
       PromedioMalvados := PromedioMalvados/malvados;
@@ -124,6 +118,8 @@ Begin
   Readkey();
 
 End.
+
+
 
 
 
