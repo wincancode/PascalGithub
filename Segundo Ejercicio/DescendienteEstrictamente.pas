@@ -31,7 +31,6 @@ Begin
         Begin
           Descendente := false;
           NumPost := Num;
-          NumAnt := NumAnt;
         End;
 
       //*Se verifica si sigue siendo descendente para asignar el numero ingresado al numero anterior para la siguiente iteracion
@@ -49,6 +48,7 @@ Begin
     Writeln('Su lista de ',i,' elementos NO es descendente, ya que aparece ',NumAnt,' seguido de ',NumPost,'.');
   Readkey();
 End.
+
 
 
 
