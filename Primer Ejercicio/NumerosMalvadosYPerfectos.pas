@@ -9,6 +9,10 @@ Var
 
   PromedioPerfectos,PromedioMalvados:  Real;
 Begin
+
+
+
+
   //Juandi si lees esto sos un pro y yo tmbn
   j := 0;
   perfectos := 0;
