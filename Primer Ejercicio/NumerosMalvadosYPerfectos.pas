@@ -27,11 +27,18 @@ Begin
   Writeln('Ingrese una secuencia de numeros, utilizando el cero (0) para terminarla.');
   Readln(Numero);
 
-  MenorMalvado := Numero+1;
-  MenorPerfecto := Numero+1;
+
 
   While Numero<>0 Do
     Begin
+
+      If Perfectos=0 Then
+        MenorPerfecto := Numero+1;
+      If Malvados=0 Then
+        MenorMalvado := Numero+1;
+
+
+
       //*Se verifican los numeros perfectos
       AuxilairPerfecto := 0;
       For i := 1 To Numero-1 Do
@@ -43,7 +50,7 @@ Begin
         End;
 
       //*Se cuentan y acumulan los perfectos, y se verifica si hay un nuevo mayor y menor;
-      If AuxilairPerfecto=Numero Then
+      If AuxilairPerfecto = Numero Then
         Begin
           Perfectos := Perfectos+1;
           PromedioPerfectos := PromedioPerfectos+Numero;
@@ -58,8 +65,9 @@ Begin
       AuxBin := Numero;
       j := 0;
       //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
       Repeat
-        AuxBin2 := AuxBin2 Mod 2;
+        AuxBin2 := AuxBin Mod 2;
         AuxBin := AuxBin Div 2;
         If AuxBin2 <> 0 Then
           Begin
@@ -116,6 +124,11 @@ Begin
   Readkey();
 
 End.
+
+
+
+
+
 
 
 
