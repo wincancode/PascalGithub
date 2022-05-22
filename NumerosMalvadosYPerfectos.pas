@@ -9,7 +9,7 @@ Var
 
   PromedioPerfectos,PromedioMalvados:  Real;
 Begin
-  //Este comentario esta sincronizado
+  //Este comentario YA NO esta sincronizado... o si?
   j := 0;
   perfectos := 0;
   malvados := 0;
