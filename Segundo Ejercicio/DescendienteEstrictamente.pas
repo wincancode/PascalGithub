@@ -4,7 +4,7 @@ Program DesdendienteeEstrictamente;
 Uses Crt;
 
 Var 
-
+//sex
   //* NumAnt: El numero anterior al que se ingresa; NumPost: El Numero que rompe la secuencia descendente; Descendente: El booleano que almacena si es descendente o no. 
   Num, i, NumPost,NumAnt: Integer;
   Descendente: Boolean;
