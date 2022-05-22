@@ -59,12 +59,9 @@ Begin
       Repeat
         AuxiliarBinario2 := AuxiliarBinario Mod 2;
         AuxiliarBinario := AuxiliarBinario Div 2;
-        Writeln('A',AuxiliarBinario2);
-        Writeln('B',AuxiliarBinario);
         If AuxiliarBinario2 <> 0 Then
           Begin
             j := j+1;
-            Writeln('C',j)
           End;
       Until (AuxiliarBinario=0);
 
@@ -115,6 +112,7 @@ Begin
   Readkey();
 
 End.
+
 
 
 
