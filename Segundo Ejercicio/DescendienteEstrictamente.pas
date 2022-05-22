@@ -1,16 +1,16 @@
 
-Program DescendienteYAscendente;
-
+Program DesdendienteeEstrictamente;
 Uses Crt;
 
 Begin
+  While (Numero <> 0) do
+    begin
+      Writeln('Este programa ordena ')
+    end;
+End.
 
-  While 
-
-        End.
 
 
-        1
 
 
 
