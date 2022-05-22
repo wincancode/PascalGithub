@@ -23,22 +23,8 @@ Begin
 
   MayorPerfecto := 0;
 
-  Writeln(
-
-
-
-
-
-'Este programa calcula el promedio, el mayor, y el menor de los numeros perfectos y malvados de una secuencia numerica. '
-  );
-  Writeln(
-
-
-
-
-
-     'Ingrese una secuencia de numeros, utilizando el cero (0) para terminarla.'
-  );
+  Writeln('Este programa calcula el promedio, el mayor, y el menor de los numeros perfectos y malvados de una secuencia numerica. ');
+  Writeln('Ingrese una secuencia de numeros, utilizando el cero (0) para terminarla.');
   Readln(Numero);
 
   MenorMalvado := Numero+1;
@@ -61,7 +47,10 @@ Begin
 
 
 
-//*Se cuentan y acumulan los perfectos, y se verifica si hay un nuevo mayor y menor;
+
+
+
+      //*Se cuentan y acumulan los perfectos, y se verifica si hay un nuevo mayor y menor;
       If AuxilairPerfecto=Numero Then
         Begin
           Perfectos := Perfectos+1;
@@ -96,7 +85,10 @@ Begin
 
 
 
-//*Se cuentan y acumulan los malvados, y se verifica si hay un nuevo mayor y menor;
+
+
+
+      //*Se cuentan y acumulan los malvados, y se verifica si hay un nuevo mayor y menor;
 
       If j Mod 2 = 0 Then
         Begin
@@ -142,6 +134,19 @@ Begin
   Readkey();
 
 End.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
