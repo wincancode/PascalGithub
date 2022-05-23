@@ -6,7 +6,7 @@ Uses Crt;
 
 Var 
   Numero,AuxBin,AuxilairPerfecto,AuxBin2,Perfectos,malvados,
-  MayorPerfecto,MayorMalvado,MenorPerfecto,MenorMalvado,i,j:  Integer;
+  MayorPerfecto,MayorMalvado,MenorPerfecto,MenorMalvado,i:  Integer;
 
   PromedioPerfectos,PromedioMalvados:  Real;
 Begin
@@ -63,21 +63,21 @@ Begin
 
       //*Se verifican los numeros malvados
       AuxBin := Numero;
-      j := 0;
+      i := 0;
 
       Repeat
         AuxBin2 := AuxBin Mod 2;
         AuxBin := AuxBin Div 2;
         If AuxBin2 <> 0 Then
           Begin
-            j := j+1;
+            i := i+1;
           End;
       Until (AuxBin=0);
 
 
       //*Se cuentan y acumulan los malvados, y se verifica si hay un nuevo mayor y menor;
 
-      If j Mod 2 = 0 Then
+      If i Mod 2 = 0 Then
         Begin
           Malvados := Malvados+1;
           PromedioMalvados := PromedioMalvados+Numero;
@@ -118,6 +118,8 @@ Begin
   Readkey();
 
 End.
+
+
 
 
 
