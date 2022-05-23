@@ -121,20 +121,6 @@ End.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {!1.- Dado una secuencia de números naturales, finalizada con un cero, construya un
 algoritmo que determine : el mayor, el menor y el promedio de los números perfectos y
 a su vez malvados, según la definición dada a continuación.
