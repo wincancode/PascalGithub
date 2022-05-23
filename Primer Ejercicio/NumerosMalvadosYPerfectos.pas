@@ -13,12 +13,11 @@ Var
   PP,PM:  Real;
 Begin
 
-
-  Perf := 0;
+  Perf := 0;Claro que tengo la ca
   Malv := 0;
   AuxP := 0;
   PM := 0;
-  PP := 0;
+  PP := 0; 
   AuxBin2 := 0;
 
   MayorM  := 0;
@@ -38,7 +37,7 @@ Begin
       If Malv=0 Then
         MenorM := Num+1;
 
-      //*Se verifican los numeros Perfectos
+      //Se verifican los numeros Perfectos
       AuxP := 0;
       For i := 1 To Num-1 Do
         Begin
@@ -48,7 +47,7 @@ Begin
             End;
         End;
 
-      //*Se cuentan y acumulan los Perfectos, y se verifica si hay un nuevo mayor y menor;
+      //Se cuentan y acumulan los Perfectos, y se verifica si hay un nuevo mayor y menor;
       If AuxP = Num Then
         Begin
           Perf := Perf+1;
@@ -60,7 +59,7 @@ Begin
         End;
 
 
-      //*Se verifican los numeros Malvados
+      //Se verifican los numeros Malvados
       AuxBin := Num;
       i := 0;
 
@@ -74,7 +73,7 @@ Begin
       Until (AuxBin=0);
 
 
-      //*Se cuentan y acumulan los Malvados, y se verifica si hay un nuevo mayor y menor;
+      //Se cuentan y acumulan los Malvados, y se verifica si hay un nuevo mayor y menor;
 
       If i Mod 2 = 0 Then
         Begin
@@ -117,13 +116,6 @@ Begin
   Readkey();
 
 End.
-
-
-
-
-
-
-
 
 
 
