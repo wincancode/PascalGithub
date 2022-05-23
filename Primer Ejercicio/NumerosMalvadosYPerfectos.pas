@@ -13,11 +13,11 @@ Var
   PP,PM:  Real;
 Begin
 
-  Perf := 0;Claro que tengo la ca
+  Perf := 0;
   Malv := 0;
   AuxP := 0;
   PM := 0;
-  PP := 0; 
+  PP := 0;
   AuxBin2 := 0;
 
   MayorM  := 0;
@@ -116,6 +116,7 @@ Begin
   Readkey();
 
 End.
+
 
 
 
