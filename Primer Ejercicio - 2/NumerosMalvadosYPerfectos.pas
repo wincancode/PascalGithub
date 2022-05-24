@@ -32,11 +32,11 @@ Begin
       Perf := false;
       Malv := false;
 
-      If PerfYMalv=0 Then
+      If PerfoMalv=0 Then
         MenorPM := Num+1;
 
 
-      //Se verifican los numeros Perfectos
+      //Se verifica si el numero es perfecto
       AuxP := 0;
       For i := 1 To Num-1 Do
         Begin
@@ -46,11 +46,10 @@ Begin
             End;
         End;
 
-      //Se cuentan y acumulan los Perfectos, y se verifica si hay un nuevo mayor y menor;
       If AuxP = Num Then
         perf := true;
 
-      //Se verifican los numeros Malvados
+      //Se verifica si el numero es malvado
       AuxBin := Num;
       i := 0;
 
@@ -63,13 +62,10 @@ Begin
           End;
       Until (AuxBin=0);
 
-
-      //Se cuentan y acumulan los Malvados, y se verifica si hay un nuevo mayor y menor;
-
       If i Mod 2 = 0 Then
         Malv := True;
 
-
+      //Si es perfecto o malvado, se acumula para el promedio, se cuenta dentro de un contador, y se verifica si hay un nuevo mayor o menor.
       If (Malv=true) Or (Perf=true) Then
         Begin
           If Num>MayorPM Then
@@ -79,12 +75,12 @@ Begin
           PPM := PPM+Num;
           PerfoMalv := PerfoMalv+1;
         End;
-      Writeln('Ingrese otro numero.');
+      Writeln('Ingrese otro numero. Recuerde usar cero (0) para terminar la secuencia.');
       Readln(Num);
     End;
 
 
-  If PerfYMalv<>0 Then
+  If PerfoMalv<>0 Then
     Begin
       PPM := PPM/PerfoMalv;
       Writeln('Numeros Perfectos o Malvados: ');
@@ -93,14 +89,16 @@ Begin
       Writeln('Y su promedio fue de: ',PPM:0:2);
     End
   Else
-    Begin
-      Writeln('No hubieron numeros perfectos y malvados al mismo tiempo.')
-    End;
+    Writeln('No hubieron numeros perfectos o malvados en la secuencia.');
+
 
 
   Readkey();
 
 End.
+
+
+
 
 
 
