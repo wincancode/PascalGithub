@@ -5,35 +5,36 @@ Program NumerosPerf_Y_NumerosMalvados;
 Uses Crt;
 
 Var 
-  //AuxBin,AuxBin2: Auxiliares para emular la obtencion del numero binario para verificar los numeros malvados; AuxP: Auxiliar para verificar los numeros perfectos; Perf,Malv: Contador de perfectos y malvados; MayorP,MayorM,MenorP,MenorM: Mayores y menores de perfectos y malvados; i: Contador general.
-  Num,AuxBin,AuxBin2,AuxP,Perf,Malv,
-  MayorP,MayorM,MenorP,MenorM,i:  longInt;
+  //AuxBin,AuxBin2: Auxiliares para emular la obtencion del numero binario para verificar los numeros malvados; AuxP: Auxiliar para verificar los numeros perfectos; PerfOmalv: Contador de perfectos o malvados; MenorPM, MayorPM: Mayore y menor de perfectos o malvados; i: Contador general.
+  Num,AuxBin,AuxBin2,AuxP,PerfoMalv,MenorPM,MayorPM,i:  longint;
 
-  //PP: Promedio de Perfectos; PM: Promedio de malvados
-  PP,PM:  Real;
+  //PPM: Promedio de los perfectos o malvados
+  PPM:  Real;
+
+  Perf,Malv : Boolean;
 Begin
 
-  Perf := 0;
-  Malv := 0;
+  PerfoMalv := 0;
+  MayorPM := 0;
+  MenorPM := 0;
+  PPM := 0;
   AuxP := 0;
-  PM := 0;
-  PP := 0;
   AuxBin2 := 0;
-
-  MayorM  := 0;
-  MayorP := 0;
 
   Writeln('Este programa calcula el promedio, el mayor, y el menor de los numeros perfectos y Malvados de una secuencia numerica. ');
   Writeln('Ingrese una secuencia de numeros, utilizando el cero (0) para terminarla.');
   Readln(Num);
 
+
+
   While Num<>0 Do
     Begin
+      Perf := false;
+      Malv := false;
 
-      If Perf=0 Then
-        MenorP := Num+1;
-      If Malv=0 Then
-        MenorM := Num+1;
+      If PerfYMalv=0 Then
+        MenorPM := Num+1;
+
 
       //Se verifican los numeros Perfectos
       AuxP := 0;
@@ -47,15 +48,7 @@ Begin
 
       //Se cuentan y acumulan los Perfectos, y se verifica si hay un nuevo mayor y menor;
       If AuxP = Num Then
-        Begin
-          Perf := Perf+1;
-          PP := PP+Num;
-          If Num > MayorP Then
-            MayorP := Num;
-          If Num < MenorP Then
-            MenorP := Num;
-        End;
-
+        perf := true;
 
       //Se verifican los numeros Malvados
       AuxBin := Num;
@@ -74,46 +67,40 @@ Begin
       //Se cuentan y acumulan los Malvados, y se verifica si hay un nuevo mayor y menor;
 
       If i Mod 2 = 0 Then
-        Begin
-          Malv := Malv + 1;
-          PM := PM+Num;
-          If Num > MayorM Then
-            MayorM := Num;
-          If Num < MenorM Then
-            MenorM := Num;
-        End;
+        Malv := True;
 
+
+      If (Malv=true) Or (Perf=true) Then
+        Begin
+          If Num>MayorPM Then
+            MayorPM := Num;
+          If Num<MenorPM Then
+            MenorPM := Num;
+          PPM := PPM+Num;
+          PerfoMalv := PerfoMalv+1;
+        End;
       Writeln('Ingrese otro numero.');
       Readln(Num);
     End;
 
-  If Perf<>0 Then
+
+  If PerfYMalv<>0 Then
     Begin
-      PP := PP/Perf;
-      Writeln('Numeros Perfectos: ');
-      Writeln('El mayor es: ', MayorP);
-      Writeln('El menor es: ', MenorP);
-      Writeln('Y su promedio fue de: ',PP:0:2);
+      PPM := PPM/PerfoMalv;
+      Writeln('Numeros Perfectos o Malvados: ');
+      Writeln('El mayor es: ', MayorPM);
+      Writeln('El menor es: ', MenorPM);
+      Writeln('Y su promedio fue de: ',PPM:0:2);
     End
   Else
-    Writeln('No hubieron Numeros Perfectos');
-  Writeln('---------------------------------');
-  If Malv<>0 Then
     Begin
-      PM := PM/Malv;
-      Writeln('Numeros Malvados: ');
-      Writeln('El mayor es: ', MayorM);
-      Writeln('El menor es: ',MenorM);
-      Writeln('Y su promedio fue de: ',PM:0:2);
-    End
-  Else
-    Writeln('No hubieron Numeros Malvados');
+      Writeln('No hubieron numeros perfectos y malvados al mismo tiempo.')
+    End;
 
 
   Readkey();
 
 End.
-
 
 
 
