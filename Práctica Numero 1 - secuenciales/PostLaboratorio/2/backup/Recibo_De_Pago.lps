@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Recibo_De_Pago.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="85"/>
+        <CursorPos X="18" Y="102"/>
+        <UsageCount Value="77"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Laboratorio\PromedioEstudiante.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="41" Y="9"/>
+        <UsageCount Value="37"/>
+      </Unit>
+      <Unit>
+        <Filename Value="orinokia.lpi"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+    <HistoryLists>
+      <List Name="LaunchingApplication" Type="File" Count="1">
+        <Item1 Value="C:\windows\system32\cmd.exe /C ${TargetCmdLine}"/>
+      </List>
+    </HistoryLists>
+  </ProjectSession>
+</CONFIG>

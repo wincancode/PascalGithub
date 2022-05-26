@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="AreaTriangulo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="8"/>
+        <CursorPos X="33" Y="17"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="1">
+      <Position>
+        <Filename Value="AreaTriangulo.pas"/>
+        <Caret Line="13" Column="26" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="AreaTriangulo.pas"/>
+        <Caret Line="28" Column="25" TopLine="8"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="project1.lpr"/>
+        <Line Value="3"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

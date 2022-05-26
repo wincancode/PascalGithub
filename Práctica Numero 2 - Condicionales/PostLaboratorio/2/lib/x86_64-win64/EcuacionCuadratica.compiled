@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1390977449"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -l -vewnhibq &quot;-FiC:\Users\edwardo contreras\Desktop\Práctica #2\Ecuación cuadrática\lib\x86_64-win64&quot; &quot;-FuC:\Users\edwardo contreras\Desktop\Práctica #2\Ecuación cuadrática\&quot; &quot;-FUC:\Users\edwardo contreras\Desktop\Práctica #2\Ecuación cuadrática\lib\x86_64-win64\&quot; &quot;-FEC:\Users\edwardo contreras\Desktop\Práctica #2\Ecuación cuadrática\&quot; &quot;-oC:\Users\edwardo contreras\Desktop\Práctica #2\Ecuación cuadrática\EcuacionCuadratica.exe&quot; EcuacionCuadratica.pas"/>
+  <Complete Value="False"/>
+</CONFIG>

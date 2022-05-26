@@ -1,0 +1,76 @@
+program PromedioEstudiante;
+Uses Crt,sysutils;
+
+Type
+  Cadenita=String[15];
+Var
+  Nombre1,Nombre2,Apellido1,Apellido2:Cadenita;
+  Genero,Nacionalidad,Revision:Char;
+  Genero_Largo,Cedula:String[9];
+  Calificacion1,Calificacion2,Calificacion3:byte;
+  Promedio:Real;
+  Dia,mes,anio:Word;
+
+
+begin
+  Writeln('Por favor introduzca el primer nombre del estudiante.');
+  Readln(Nombre1);
+  Clrscr;
+  Writeln('Por favor introduzca el segundo nombre del estudiante.');
+  Write(Nombre1,' ');
+  Readln(Nombre2);
+
+  Clrscr;
+  Writeln('Por favor introduzca el primer apellido del estudiante.');
+  Write(Nombre1,' ',Nombre2,' ');
+  Readln(Apellido1);
+  Clrscr;
+  Writeln('Por favor introduzca el segundo apellido del estudiante.');
+  Write(Nombre1,' ',Nombre2,' ',Apellido1,' ');
+  Readln(Apellido2);
+
+  Clrscr;
+  Writeln('Por favor introduzca el numero de su cedula de identidad.');
+  Readln(cedula);
+  Clrscr;
+  Writeln('Seleccione si el estudiante es venezolano o nacido en un pais extranjero al ingresar uno de los dos numeros.');
+  Writeln('1: Venezolano, 2: Extranjero.');
+  Readln(Revision);
+  case Revision of
+    '1':Nacionalidad:='V' ;
+    '2':Nacionalidad:='E' ;
+  end;
+
+  Clrscr;
+  Writeln('Por favor seleccione el genero con el que se identifica.');
+  Writeln('1:Masculino, 2:Femenino.');
+  Readln(Revision);
+  case Revision of
+    '1': Begin
+              Genero:='M'; Genero_Largo:='Masculino';
+         end;
+    '2': Begin
+              Genero:='F'; Genero_Largo:='Femenino';
+         end;
+  end;
+
+
+  Clrscr;
+  Writeln('Por favor introduzca las tres notas obtenidas por el estudiante, sin decimales.');
+  Readln(Calificacion1,Calificacion2,Calificacion3);
+
+  Promedio:=(Calificacion1+Calificacion2+Calificacion3)/3;
+
+  Clrscr;
+  DeCodeDate(Date,Anio,Mes,Dia);
+  Writeln(Format ('UCAB                                         %d/%d/%d ',[Dia,Mes,Anio]));
+  Writeln('                    Reporte de notas');
+  Writeln('');
+  Writeln('Bachiller: ',Nombre1,'    ',Nombre2,'    ',Apellido1,'    ',Apellido2);
+  Writeln('Cedula: ',Nacionalidad,Cedula,'  Genero: ',Genero,' ',Genero_Largo);
+  Writeln('Calificacion1: ',Calificacion1,'  Calificacion2: ',Calificacion2,'  Calificacion3: ',Calificacion3);
+  Writeln('');
+  Writeln('Promedio final de notas: ',Promedio:0:2,' puntos.');
+  Readkey();
+end.
+
