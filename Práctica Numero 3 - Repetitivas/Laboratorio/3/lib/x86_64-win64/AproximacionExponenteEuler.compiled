@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1390977449"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -l -vewnhibq &quot;-FiC:\Users\edwardo contreras\Desktop\Segundo semestre\Algoritmos y Programación I\Prácticas\Practica 3\Laboratorio\3\lib\x86_64-win64&quot; &quot;-FuC:\Users\edwardo contreras\Desktop\Segundo semestre\Algoritmos y Programación I\Prácticas\Practica 3\Laboratorio\3\&quot; &quot;-FUC:\Users\edwardo contreras\Desktop\Segundo semestre\Algoritmos y Programación I\Prácticas\Practica 3\Laboratorio\3\lib\x86_64-win64\&quot; &quot;-FEC:\Users\edwardo contreras\Desktop\Segundo semestre\Algoritmos y Programación I\Prácticas\Practica 3\Laboratorio\3\&quot; &quot;-oC:\Users\edwardo contreras\Desktop\Segundo semestre\Algoritmos y Programación I\Prácticas\Practica 3\Laboratorio\3\AproximacionExponenteEuler.exe&quot; AproximacionExponenteEuler.lpr"/>
+</CONFIG>
