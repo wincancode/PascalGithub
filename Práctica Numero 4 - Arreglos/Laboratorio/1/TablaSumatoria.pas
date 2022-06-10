@@ -4,7 +4,7 @@ Program TablaSumatoria;
 Uses Crt;
 
 Var 
-  M,N,Num,i,J: Integer;
+  M,N,i,J: Integer;
   Tabla: Array [1..11,1..11] Of integer;
 Begin
   Writeln('Por favor ingrese la cantidad de filas y columnas que desea utilizar, en ese orden. No pueden superar las 10 en cada una.');
@@ -15,9 +15,9 @@ Begin
     Begin
 
 
-      For i:=1 To M Do
+      For i:=1 To M+1 Do
         Begin
-          For j:=1 To N Do
+          For j:=1 To N+1 Do
             Begin
               Tabla[i,j] := 0;
             End;
@@ -34,41 +34,44 @@ Begin
 
 
 
-
+      //Suma de las filas
       For i:=1 To M Do
         Begin
           For j:=1 To N Do
             Begin
-              Tabla[i,M+1] := Tabla[i,M+1] + Tabla[i,j];
-              Writeln('???',tabla[i,M+1]);
+              Tabla[i,N+1] := Tabla[i,N+1] + Tabla[i,j];
             End;
         End;
 
-
+      //Suma de columnas
       For i:=1 To M Do
         Begin
           For j:=1 To N Do
             Begin
-              Tabla[N+1,j] := Tabla[N+1,j] + Tabla [i,j];
-              Writeln('!!!',Tabla[N+1,j]);
+              Tabla[M+1,j] := Tabla[M+1,j] + Tabla [i,j];
             End;
         End;
 
-      For i:=1 To M Do
+
+      //Suma de todos los elementos de la matriz
+      For i := 1 To M Do
         Begin
-          For j:=1 To N Do
+          For j := 1 To N Do
             Begin
-              Tabla[N+1,M+1] := Tabla[N+1,M+1] + Tabla[j,M+1];
-              Tabla[N+1,M+1] := Tabla[N+1,M+1] + Tabla[N+1,i];
-              //   Writeln(Tabla[N+1,M+1]);
+              Tabla[M+1,N+1] := Tabla[M+1,N+1] + Tabla[i,j];
             End;
         End;
 
-      Writeln(Tabla[N+1,M+1]);
-
-
+      //Dibujar la tabla en pantalla
+      For i:=1 To M+1 Do
+        Begin
+          For j:=1 To N+1 Do
+            Begin
+              Write(Tabla[i,j],'    ');
+            End;
+          Writeln('');
+        End;
+        
     End;
-
-
   Readkey();
 End.
