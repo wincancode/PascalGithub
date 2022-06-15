@@ -8,7 +8,7 @@ Var
   Cedulas: Array [1..10] Of string [8];
   calificaciones: Array [1..10,1..3] Of Integer;
   Aux_Prom, Promedio: Array [1..10] Of Real;
-  Ordenamiento: Array [1..10] Of Real;
+  Ordenamiento: Array [1..10] Of Integer;
   Sumatoria, i,j: Integer;
   Mayor, Menor, orden : Boolean;
   Aux : integer;
@@ -40,33 +40,25 @@ Begin
     End;
 
   //Se revisan los estudiantes de menor a mayor promedio
-  //Se copia el arreglo en uno nuevo 
-  For i:=1 To 10 Do
-    Begin
-      Aux_Prom[i] := Promedio[i];
-    End;
 
   //Se ordena de menor a mayor.
-  For i:=0 To 9 Do
+  For i:=1 To 10 Do
     Begin
-      While Aux_Prom[i] > 0 Do
+      Aux := 0;
+      For j:=1 To 10 Do
         Begin
-          aux := 0;
-          For j:=1 To 10 Do
-            Begin
-              If (Promedio[i] < Aux_Prom[i]) Then
-                  Aux := aux+1;
-              If Aux=10-i Then
-                  Ordenamiento[i]:=i+1; 
-            End;
+          If Promedio[i] > Promedio[j] Then
+            Aux := Aux+1
         End;
+      Ordenamiento[Aux] := i;
     End;
 
+
   //Se escriben los nombres
-  For i:=1 to 10 do
-  begin
-    Writeln(Alumnos[Ordenamiento[i]]);
-  end;
+  For i:=1 To 10 Do
+    Begin
+      Writeln(Alumnos[Ordenamiento[i]]);
+    End;
   Readkey();
 End.
 
