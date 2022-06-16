@@ -137,6 +137,5 @@ Begin
       Writeln('');
     End;
 
-  readkey();
 
 End.

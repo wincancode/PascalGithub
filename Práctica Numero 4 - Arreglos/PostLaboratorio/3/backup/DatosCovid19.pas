@@ -3,18 +3,18 @@ Program DatosCovid19;
 
 Uses Crt;
 
-Const
-  //Se crean constantes con los generos, estados del pais y meses del anio para mejor escritura en pantalla.
+Const 
+  //Se crean constantes con los generos, estados del pais y meses del anio para mejor escritura en pantalla. 
   Generos: array[1..2] Of string[7] = ('Hombres','mujeres');
   //Se denota que 1: Hombres y 2: Mujeres de esta forma.
   Estados: array[1..23] Of string[16] = ('Amazonas','Anzoategui','Apure','Aragua','Barinas','Bolivar','Carabobo','Cojedes','Delta Amacuro','Falcon','Guarico','Lara','Merida','Miranda','Monagas','Nueva Esparta','Portuguesa','Sucre','Tachira','Trujillo','Vargas','Yaracuy','Zulia');
   meses: array[1..12] Of string[10] = ('enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiempre','octubre','noviembre','diciembre');
 
-Var
+Var 
 
   {CASOS: Arreglo tridimensional donde se encuentran la cantidad de casos ordenados por estado del pais, mes del anio y genero.
    ContagiosM: Los contagios de mujeres por estado
-   ContagiosH: Los contagios de hombres en un mes dado
+   ContagiosH: Los contagios de hombres en un estado dado
    EstadoMayor: El estado con mayor numero de contagios
    CasosEstadoMay: Los casos por estado del estado mayor para lograr comparar entre ellos. }
   CASOS: Array[1..23,1..12,1..2] Of integer;

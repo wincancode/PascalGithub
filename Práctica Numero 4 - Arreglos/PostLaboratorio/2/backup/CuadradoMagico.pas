@@ -58,7 +58,7 @@ Begin
     Begin
       For j:=1 To N Do
         Begin
-          Write(Matriz[i,j],'  ');
+          Write(Matriz[i,j],' ');
         End;
       Writeln(' ');
     End;
