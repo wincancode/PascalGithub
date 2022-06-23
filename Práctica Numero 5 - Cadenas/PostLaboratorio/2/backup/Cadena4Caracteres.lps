@@ -6,19 +6,12 @@
     <BuildModes Active="Default"/>
     <Units>
       <Unit>
-        <Filename Value="Espiral.pas"/>
+        <Filename Value="Cadena4Caracteres.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="65"/>
-        <CursorPos X="54" Y="78"/>
-        <UsageCount Value="21"/>
-        <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="..\..\..\Práctica Numero 5 - Cadenas\PostLaboratorio\1\EditorDeTexto.pas"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="53" Y="9"/>
-        <UsageCount Value="10"/>
+        <TopLine Value="17"/>
+        <CursorPos X="20" Y="32"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>

@@ -3,7 +3,7 @@ Program EcuacionCuadratica;
 
 Uses crt;
 
-Var
+Var 
   a,b,c,d,J,Q,Raiz1,Raiz2: real;
   //a,b,c: Terminos de la ecuacion cuadratica; d: Discriminante; j,Q: Parte real e imaginaria de las raices complejas
 Begin
@@ -41,8 +41,8 @@ Begin
                   Q := sqrt(abs(b*b - 4*a*c))/(2*a);
 
                   //Se multiplica Q por -1 si es negativo, para volverlo positivo y evitar la multiplicacion de signos
-                  If Q<0 then
-                    Q:=Q*-1;
+                  If Q<0 Then
+                    Q := Q*-1;
 
                   Writeln('Existen dos raices complejas: (',J:0:2,')+(',Q:0:2,'i) y (',J:0:2,')-(',Q:0:2,'i)');
                 End

@@ -1,0 +1,24 @@
+
+1. Escriba un programa que, dado una cadena de caracteres conformada por varias palabras, indique la cantidad de veces que se repite cada vocal y lo represente en un histograma. Ejemplo: En la cadena “La casa de los espíritus es una obra de Isabel Allende”, la salida sería:
+
+a 7 *******
+e 6 ******
+i 3 ***
+o 1 *
+u 2 **
+
+Análisis del problema
+
+EntradaProcesoSalidaLa cadena conformada por varias palabras (Cadenita)Pedir el dato de entrada
+
+Verificar la cantidad de veces que se repita una vocal en la cadena y guardarlas en un contador.
+
+Mostrar los datos de salidaLa cantidad de vocales que tiene la cadena representada en asteriscos.
+Algoritmo en pseudocódigo
+2
+
+2. Escriba un programa que reciba una cadena de caracteres y determine si esta cadena es palíndrome. Una cadena es palíndrome si se lee igual de derecha a izquierda y de izquierda a derecha. Ejemplo : "Isaac no ronca así"
+
+3. Escribir un programa en Pascal que elimine los blancos de una cadena de caracteres e imprima la nueva cadena
+
+4. Escribir un programa en Pascal que encripte una cadena de caracteres sumando 2 al código ASCII de cada uno de sus caracteres y muestre la nueva cadena

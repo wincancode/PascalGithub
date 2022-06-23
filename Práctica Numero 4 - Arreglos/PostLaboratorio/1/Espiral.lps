@@ -8,14 +8,25 @@
       <Unit>
         <Filename Value="Espiral.pas"/>
         <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5"/>
+        <CursorPos Y="17"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Práctica Numero 5 - Cadenas\PostLaboratorio\1\EditorDeTexto.pas"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="65"/>
-        <CursorPos X="54" Y="78"/>
-        <UsageCount Value="20"/>
+        <CursorPos X="4"/>
+        <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory>
+      <Position>
+        <Filename Value="..\..\..\Práctica Numero 5 - Cadenas\PostLaboratorio\1\EditorDeTexto.pas"/>
+        <Caret Line="9" Column="53"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
